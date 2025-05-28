@@ -1,47 +1,33 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+import ChatNav from "../src/components/ChatNavigation.vue"
+export default {
+  components: {
+    ChatNav
+  },
+}
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="chat-app">
+    <ChatNav />
+    <div class="chat-contact-container-card"></div>
+    <div class="chat-message-display"></div>
+    <div class="chat-contact-detail"></div>
+  </div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.chat-app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
