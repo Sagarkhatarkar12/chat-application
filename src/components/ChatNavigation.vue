@@ -30,36 +30,31 @@ export default {
 .chat-Navigation-container{
 
     background-color:#161b1c;
-    width: fit-content;
+    width: 5rem;
     border-right: 2px solid #202427;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     color:#737879;
     min-height: fit-content;
-   padding: 0.2rem 2rem;
-    gap: 5.4rem;
+    gap: 8.2rem;
 }
 .chat-Navigation-container{
-    padding :2rem 1rem !important;
+    padding :0.8rem 0rem !important;
 }
 .chat-Navigation-container-middleItem{
     display: flex;
-    gap: 0.7rem;
+    gap: 0.6rem;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
-
 }
 
 .chat-Navigation-container-middleItem p{
     border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-
-    padding: 0.3rem 0rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.2rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,11 +70,11 @@ background-color: #47a6c3!important;
 color: white;
 }
 .chat-Navigation-container-middleItem p i{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 .chat-Navigation-container-heading{
 
-    height: 3rem;
+    height: 2.5rem;
     padding: 0.5rem;
     background-color: white;
     border-radius: 50%;
