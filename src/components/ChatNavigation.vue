@@ -1,7 +1,10 @@
 
 <script >
+import Avatar from './Avatar.vue';
 export default {
-
+components:{
+    Avatar
+}
 }
 
 </script>
@@ -20,7 +23,7 @@ export default {
     </div>
     <div class="chat-Navigation-container-last">
 <p><i class="ri-add-line"></i></p>
-<p><img src="../assets/image/profile.png" alt=""></p>
+<Avatar :src= "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAXaRVdV1WIzPuhhLHZu6Nl9XqzC4Zy8jvw&s'" />
     </div>
 </div>
 </template>

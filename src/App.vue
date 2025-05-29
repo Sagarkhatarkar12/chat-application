@@ -1,33 +1,18 @@
 <script>
-import ChatNav from "../src/components/ChatNavigation.vue"
+import home from "./components/Home.vue"
 export default {
   components: {
-    ChatNav
+    home
   },
 }
 </script>
 
 <template>
-  <div class="chat-app">
-    <ChatNav />
-    <div class="chat-contact-container-card"></div>
-    <div class="chat-message-display"></div>
-    <div class="chat-contact-detail"></div>
-  </div>
+<home/>
 
 </template>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-.chat-app {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-}
 
 </style>
