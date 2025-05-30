@@ -26,6 +26,8 @@ components:{
 <Avatar :src= "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAXaRVdV1WIzPuhhLHZu6Nl9XqzC4Zy8jvw&s'" />
     </div>
 </div>
+
+
 </template>
 
 
@@ -76,7 +78,6 @@ color: white;
     font-size: 1.3rem;
 }
 .chat-Navigation-container-heading{
-
     height: 2.5rem;
     padding: 0.5rem;
     background-color: white;
@@ -95,10 +96,9 @@ color: white;
     gap: 1rem;
 }
 .chat-Navigation-container-last p{
-      border-radius: 50%;
+    border-radius: 50%;
     height: 3rem;
     width: 3rem;
-
     /* padding: 0.3rem 0rem; */
     display: flex;
     justify-content: center;
