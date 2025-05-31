@@ -66,7 +66,7 @@
         </div>
         <Heading :title="'Message'" />
         <div class="message-container">
-            <message :src = "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s'"/>
+            <message :typing="true" :src = "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s'"/>
             <message :src = "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s'"/>
             <message :src = "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s'"/>
             <message :src = "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s'"/>
