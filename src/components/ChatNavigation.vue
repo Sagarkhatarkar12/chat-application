@@ -42,7 +42,7 @@ components:{
     flex-direction: column;
     color:#737879;
     min-height: fit-content;
-    gap: 8.2rem;
+    gap: 7rem;
 }
 .chat-Navigation-container{
     padding :0.8rem 0rem !important;

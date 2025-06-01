@@ -39,12 +39,19 @@ export default {
 .OnlineContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
     gap: 1rem;
     &-Online-Avatar {
         display: flex;
         flex-direction: column;
         position: relative;
         gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        // height: 100%;
+        height: fit-content;
 
         .dot {
             background-color: green;
@@ -60,14 +67,5 @@ export default {
 
 }
 
-.onlineCollection {
-    display: flex;
-    // flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.5rem 0.5rem;
-    overflow-y: auto;
-    height: 10rem;
-    width: 100%;
-    cursor: pointer;
-}
+
 </style>
