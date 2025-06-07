@@ -108,9 +108,9 @@ export default {
                 {
                     name: "Doe",
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
-                    typing: false,  sent:true,
-                    delivered:false,
-                    seen:false,
+                    typing: false, sent: true,
+                    delivered: false,
+                    seen: false,
                     unRead: 2,
                     Online: false
                 },
@@ -119,9 +119,9 @@ export default {
 
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
                     typing: false,
-                    Online: false,  sent:true,
-                    delivered:false,
-                    seen:false,
+                    Online: false, sent: true,
+                    delivered: false,
+                    seen: false,
                     unRead: 0
                 },
                 {
@@ -170,57 +170,9 @@ export default {
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
                     typing: false,
                     Online: false,
-                    unRead: 0 , sent:false,
-                    delivered:true,
-                    seen:false,
-                },
-                {
-                    name: "Sagu",
-
-                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
-                    typing: false,
-                    Online: false,
-                    unRead: 0
-                },
-                {
-                    name: "Sagu",
-
-                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
-                    typing: false,
-                    Online: false,
-                    unRead: 0
-                },
-                {
-                    name: "Sagu",
-
-                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
-                    typing: false,
-                    Online: false,
-                    unRead: 0
-                },
-                {
-                    name: "Sagu",
-
-                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
-                    typing: false,
-                    Online: false,
-                    unRead: 0
-                },
-                {
-                    name: "Sagu",
-
-                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
-                    typing: false,
-                    Online: false,
-                    unRead: 0
-                },
-                {
-                    name: "Sagu",
-
-                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
-                    typing: false,
-                    Online: false,
-                    unRead: 0
+                    unRead: 0, sent: false,
+                    delivered: true,
+                    seen: false,
                 },
                 {
                     name: "Sagu",
@@ -336,13 +288,61 @@ export default {
                 },
                 {
                     name: "Sagu",
+
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
                     typing: false,
                     Online: false,
-                    sent:true,
-                    delivered:false,
-                    seen:false,
-                    
+                    unRead: 0
+                },
+                {
+                    name: "Sagu",
+
+                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
+                    typing: false,
+                    Online: false,
+                    unRead: 0
+                },
+                {
+                    name: "Sagu",
+
+                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
+                    typing: false,
+                    Online: false,
+                    unRead: 0
+                },
+                {
+                    name: "Sagu",
+
+                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
+                    typing: false,
+                    Online: false,
+                    unRead: 0
+                },
+                {
+                    name: "Sagu",
+
+                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
+                    typing: false,
+                    Online: false,
+                    unRead: 0
+                },
+                {
+                    name: "Sagu",
+
+                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
+                    typing: false,
+                    Online: false,
+                    unRead: 0
+                },
+                {
+                    name: "Sagu",
+                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
+                    typing: false,
+                    Online: false,
+                    sent: true,
+                    delivered: false,
+                    seen: false,
+
                     unRead: 0
                 },
                 {
@@ -360,7 +360,7 @@ export default {
 </script>
 <style lang="scss">
 .chat-container {
-    width: 22rem;
+    width: 23rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -446,8 +446,8 @@ export default {
 
             i {
                 position: absolute;
-                left: 1rem;
-                top: 0.9rem;
+                left: 0.7rem;
+                top: 0.5rem;
                 color: #737879;
                 font-size: 1.2rem;
             }

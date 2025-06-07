@@ -99,7 +99,6 @@ color: white;
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
-    /* padding: 0.3rem 0rem; */
     display: flex;
     justify-content: center;
     align-items: center;
