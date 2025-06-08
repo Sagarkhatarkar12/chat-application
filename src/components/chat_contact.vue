@@ -471,7 +471,6 @@ export default {
     display: flex;
     // flex-direction: column;
     gap: 1rem;
-    justify-content: center;
     align-items: center;
 
     padding: 0rem 1rem;

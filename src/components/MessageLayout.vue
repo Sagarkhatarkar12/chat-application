@@ -12,12 +12,12 @@
 
         </div>
         <div class="user-message-Stime">
-            {{ console.log(chatBigHeader )}}
-            <p v-if=" chatBigHeader != true" >12.30</p>
+            {{ console.log(chatBigHeader) }}
+            <p v-if="chatBigHeader != true">12.30</p>
             <span v-if="unRead && chatBigHeader != true" class="user-message-Stime-countMessage">{{ unRead }}</span>
             <span v-if="sent && chatBigHeader != true"><i class="ri-check-line"></i></span>
-            <span  v-else-if="delivered &&  chatBigHeader != true"><i class="ri-check-double-line"></i></span>
-            <span v-else-if="seen &&  chatBigHeader != true" class="seen"><i class="ri-check-double-line"></i></span>
+            <span v-else-if="delivered && chatBigHeader != true"><i class="ri-check-double-line"></i></span>
+            <span v-else-if="seen && chatBigHeader != true" class="seen"><i class="ri-check-double-line"></i></span>
 
             <!-- <span v-if="dumy" class="user-message-Stime-countMessage">{{ 2}}</span> -->
         </div>
@@ -66,26 +66,27 @@ export default {
             type: Boolean,
             required: true
         },
-        chatBigHeader:{
+        chatBigHeader: {
             type: Boolean,
             required: false,
-          
+
         }
     }
 
 }
 </script>
 <style lang="scss">
-.user-header-message{
-   position: relative;
+.user-header-message {
+    position: relative;
     display: flex;
     gap: 1rem;
     align-items: center;
     height: 5rem;
     width: 100%;
     padding: 1rem 0.4rem;
-    cursor: pointer;  
+    cursor: pointer;
 }
+
 .user-message {
     position: relative;
     display: flex;
