@@ -16,11 +16,7 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 
 
 
-![My Project Logo](./src/assets/image/Screenshot%202025-05-30%20054450.png)
 
-
-![My Project Logo](./src/assets/image/2.png)
-![My Project Logo](./src/assets/image/143110.png)
 ![My project Logo](./src/assets/image/33.png)
 
 ## Project Setup
