@@ -117,8 +117,8 @@ export default {
     &-input{
         position: absolute;
         bottom: 0rem;
-        width: 100%;
-        left:0px;
+        width: 99.7%;
+        left:1px;
       
 
 

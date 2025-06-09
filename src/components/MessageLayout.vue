@@ -1,5 +1,5 @@
 <template>
-    <div :class="chatBigHeader != true ? 'user-message' : 'user-header-message'">
+    <div v-if="message" :class="chatBigHeader != true ? 'user-message' : 'user-header-message'">
         <div class="user-message-Avtar">
             <Avatar :src="src" />
         </div>
@@ -12,7 +12,7 @@
 
         </div>
         <div class="user-message-Stime">
-            {{ console.log(chatBigHeader) }}
+       
             <p v-if="chatBigHeader != true">12.30</p>
             <span v-if="unRead && chatBigHeader != true" class="user-message-Stime-countMessage">{{ unRead }}</span>
             <span v-if="sent && chatBigHeader != true"><i class="ri-check-line"></i></span>
@@ -20,6 +20,21 @@
             <span v-else-if="seen && chatBigHeader != true" class="seen"><i class="ri-check-double-line"></i></span>
 
             <!-- <span v-if="dumy" class="user-message-Stime-countMessage">{{ 2}}</span> -->
+        </div>
+    </div>
+    {{ console.log(file) }}
+
+    <div v-if="file" class="file">
+        
+        <div class="file-name">
+            <div class="file-name-icon">
+                <i class="ri-file-2-fill"></i>
+            </div>
+            <p>file_name.pdf</p>
+        </div>
+        <div class="file-detail">
+            <p>DOCS</p>
+            <p>32kb</p>
         </div>
     </div>
 </template>
@@ -70,6 +85,20 @@ export default {
             type: Boolean,
             required: false,
 
+        },
+        type:{
+            type: String,
+            default: 'message'
+        }
+        ,
+        file: {
+            type: Boolean,
+            default: false
+        }
+        ,
+        message:{
+            type:Boolean,
+            default: false
         }
     }
 
@@ -188,5 +217,55 @@ export default {
 .seen {
     color: #48a5c3;
     font-size: 1.2rem;
+}
+.file{
+    height: 5rem;;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    height: fit-content;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    &:hover{
+        background-color: #2c3031;
+    }
+    background-color: #252c2e;
+    &-name{
+        display: flex;;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: #1f2628;
+        padding: 0.3rem 0.5rem;
+        border-radius: 0.5rem;
+        &-icon{
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background-color: #48a5c3;
+            border-radius: 50%;
+            color: #48a5c3;
+            font-size: 1.5rem;
+        }
+        p{
+            color: #e0e0e0;
+            font-size: 1rem;
+        }
+
+    }
+    &-detail{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            color: #737879;
+            font-size: 0.9rem;
+        }
+    }
 }
 </style>

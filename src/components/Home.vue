@@ -4,12 +4,15 @@ import ChatNav from "./ChatNavigation.vue"
 import chat_contact from "./chat_contact.vue";
 import chat_message from "./chat_message.vue";
 import Online from "./OnlineUser.vue"
+import ContactDetails from "./ContactDetails.vue";
+
 export default {
   components: {
     ChatNav,
     chat_contact,
     chat_message,
-    Online
+    Online,
+    ContactDetails,
   },
 }
 </script>
@@ -19,10 +22,13 @@ export default {
     <ChatNav />
   <chat_contact/>
   <chat_message/>
+
   
   
 
-  <div class="chat-contact-detail"></div>
+  <div class="chat-contact-detail">
+    <ContactDetails />
+  </div>
   </div>
 
 </template>

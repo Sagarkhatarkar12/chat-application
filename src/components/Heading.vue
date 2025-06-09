@@ -32,14 +32,13 @@ export default{
         cursor: pointer;
         transition: color 0.3s ease;
         &:hover {
-
-            background-color: #e0e0e0;
-            color:#202427;
+                border: 2px solid #161b1c;
         }
 
 
         h3 {
             font-size: 1.2rem;
+            color: white;
         }
 
         p {

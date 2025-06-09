@@ -3,15 +3,15 @@
     <div class="chat-item-Message">
       <p>{{ message }}
       </p>
-<div class="time">
- <p  v-if="sent"> <i class="ri-check-line"></i></p>
-  <p v-if="delivered"> <i class="ri-check-double-line"></i></p>
-  <p v-if="read" class="read"><i class="ri-check-double-line"></i></p>
-  
-   <p>12:00</p>
- </div>
+      <div class="time">
+        <p v-if="sent"> <i class="ri-check-line"></i></p>
+        <p v-if="delivered"> <i class="ri-check-double-line"></i></p>
+        <p v-if="read" class="read"><i class="ri-check-double-line"></i></p>
+
+        <p>12:00</p>
+      </div>
     </div>
- 
+
 
   </div>
 </template>
@@ -79,15 +79,12 @@ export default {
 
 .received {
   display: flex;
- 
-
   justify-content: flex-start;
-
   color: #fff;
 
   .chat-item-Message {
     background-color: #252c2e;
-  font-size: 0.9rem;
+    font-size: 0.9rem;
     width: fit-content;
     font-weight: bold;
     border-radius: 0 0.5rem 0.5rem 0.5rem;
@@ -103,7 +100,6 @@ export default {
   min-height: fit-content;
   display: flex;
   //   background-color: #252c2e;
-
   align-items: center;
   padding: 0.5rem 2rem;
 
@@ -115,13 +111,13 @@ export default {
     position: relative;
     border-radius: 0 0.5rem 0.5rem 0.5rem;
     padding: 0.5rem 1rem;
-
     max-width: 50%;
     padding: 1rem;
     cursor: pointer;
   }
 }
-.time{
+
+.time {
   position: absolute;
   color: white;
   display: flex;
@@ -131,16 +127,17 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  
- p i{
+
+  p i {
     font-size: 1.2rem;
-    // color: #47a6c2;
   }
+
   p {
     margin: 0;
     padding: 0;
     font-size: 0.6rem;
- }
+  }
+
   .read {
     color: #47a6c2;
   }

@@ -67,7 +67,7 @@
         <Heading :title="'Message'" />
         <div class="message-container">
             <message v-for="(item, index) in AllContacts" :key="item.index" :typing="item.typing" :unRead="item.unRead"
-                :userName="item.name" :seen="item.seen" :sent="item.sent" :delivered="item.delivered" :src="item.src" />
+                :userName="item.name" :seen="item.seen" :sent="item.sent" :message="item.message" :delivered="item.delivered" :src="item.src" />
         </div>
 
     </div>
@@ -95,15 +95,16 @@ export default {
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
                     typing: true,
                     unRead: 3,
-                    Online: true
+                    Online: true,
+                    message:true,
                 },
                 {
                     name: "Jago",
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
                     typing: true,
                     unRead: 0,
-                    Online: false
-
+                    Online: false,
+ message:true,
                 },
                 {
                     name: "Doe",
@@ -112,7 +113,8 @@ export default {
                     delivered: false,
                     seen: false,
                     unRead: 2,
-                    Online: false
+                    Online: false,
+                     message:true,
                 },
                 {
                     name: "Sagu",
@@ -122,6 +124,7 @@ export default {
                     Online: false, sent: true,
                     delivered: false,
                     seen: false,
+                     message:true,
                     unRead: 0
                 },
                 {
@@ -130,7 +133,8 @@ export default {
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
                     typing: false,
                     Online: false,
-                    unRead: 0
+                    unRead: 0,
+                     message:true,
                 },
                 {
                     name: "Sagu",
@@ -138,7 +142,8 @@ export default {
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
                     typing: false,
                     Online: false,
-                    unRead: 0
+                    unRead: 0,
+                     message:true,
                 },
                 {
                     name: "Sagu",
@@ -146,7 +151,8 @@ export default {
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
                     typing: false,
                     Online: false,
-                    unRead: 0
+                    unRead: 0,
+                     message:true,
                 },
                 {
                     name: "Sagu",
@@ -154,7 +160,9 @@ export default {
                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5PMuKNpA35AiK1sPXzzFuSaJPaUc2FSawQ&s",
                     typing: false,
                     Online: false,
-                    unRead: 0
+                    unRead: 0,
+                     message:true,
+
                 },
                 {
                     name: "Sagu",
