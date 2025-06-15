@@ -3,8 +3,8 @@
     <div class="chatBig">
         <div class="chatBig-header">
             <div class="chatBig-header-message">
-                <MessageLayout :chatBigHeader=true :typing="true" :user-name="'Sagar khatarkar'"
-                    src="https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-174669.jpg?semt=ais_hybrid&w=740" />
+                <h1>{{ userName }}</h1>
+                <MessageLayout :chatBigHeader=true :typing="true" :userName="userName" :src="src" />
             </div>
             <div class="chatBig-header-icons">
                 <NavIcon icon="i ri-phone-line" title="Chat" />
@@ -22,14 +22,14 @@
                 <chat_item :sender="true" :message="'Hello'" :delivered="true" />
                 <chat_item :sender="false" :message="'hii'" :delivered="true" />
                 <chat_item :sender="true" :message="'How are you'" :read="true" />
-                <chat_item :sender="false" :message="'I am find'" :read="true"/>
+                <chat_item :sender="false" :message="'I am find'" :read="true" />
                 <chat_item :sender="true" :message="'where you liviing '" :delivered="true" />
-                <chat_item :sender="false" :message="'betul mp madhya pradesh'" :sent="true"/>
+                <chat_item :sender="false" :message="'betul mp madhya pradesh'" :sent="true" />
 
             </div>
             <div class="chatBig-input">
 
-                <AddMessage/>
+                <AddMessage />
             </div>
 
         </div>
@@ -43,6 +43,20 @@ import NavIcon from './NavIcon.vue';
 import chat_item from './chat_item.vue';
 import AddMessage from './Add_message.vue';
 export default {
+    props: {
+        id: {
+            type: Number,
+            requried: true
+        },
+        userName: {
+            type: String,
+            requried: true
+        },
+        src: {
+            type: String,
+            requried: true
+        }
+    },
     components: {
 
         MessageLayout,
@@ -53,7 +67,6 @@ export default {
 }
 </script>
 <style styled lang="scss" scoped>
-
 .chatBig {
     position: relative;
     background-color: #0a0e0f;
@@ -114,12 +127,13 @@ export default {
             }
         }
     }
-    &-input{
+
+    &-input {
         position: absolute;
         bottom: 0rem;
         width: 99.7%;
-        left:1px;
-      
+        left: 1px;
+
 
 
     }

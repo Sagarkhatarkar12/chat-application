@@ -14,20 +14,41 @@ export default {
     Online,
     ContactDetails,
   },
+  data(){
+    return {
+      SelectUser :{}
+
+    }
+  },
+  methods:{
+ handleId(data){
+  console.log(data)
+
+this.SelectUser = data;
+   }
+  }
 }
 </script>
 
 <template>
   <div class="chat-app">
     <ChatNav />
-  <chat_contact/>
-  <chat_message/>
+    <!-- <h1>{{ idValue }}</h1> -->
+     <h1>
+      {{ SelectUser.userName }}
+     </h1>
+     <chat_message :id="SelectUser.id" :userName = "SelectUser.userName" :src ="SelectUser.src"/>
+    
+    <div class="second-part">
+
+      <Router-View  @id =handleId />
+    </div>
 
   
   
 
   <div class="chat-contact-detail">
-    <ContactDetails />
+    <!-- <ContactDetails /> -->
   </div>
   </div>
 
@@ -45,5 +66,7 @@ export default {
   height: 100vh;
   width: 100vw;
 }
-
+.second-part{
+  width: 100%;
+}
 </style>

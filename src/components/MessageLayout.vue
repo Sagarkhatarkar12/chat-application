@@ -1,10 +1,11 @@
 <template>
-    <div v-if="message" :class="chatBigHeader != true ? 'user-message' : 'user-header-message'">
-        <div class="user-message-Avtar">
+    <div  @click="HandleId(id,userName, src)" v-if="message" :class="chatBigHeader != true ? 'user-message' : 'user-header-message'">
+        <div class="user-message-Avtar" >
             <Avatar :src="src" />
         </div>
         <div class="user-message-text">
-            <h3>{{ userName }}</h3>
+            <!-- <h1 style="color:white">{{ userName }}</h1> -->
+            <h3 style="color:white">{{ userName }} </h3>
             <div v-if="typing" class="typing">
                 <p>typing....</p>
             </div>
@@ -22,7 +23,7 @@
             <!-- <span v-if="dumy" class="user-message-Stime-countMessage">{{ 2}}</span> -->
         </div>
     </div>
-    {{ console.log(file) }}
+    <!-- {{ console.log(file) }} -->
 
     <div v-if="file" class="file">
         
@@ -51,6 +52,10 @@ export default {
         }
     },
     props: {
+        id:{
+            type:Number,
+            required:true
+        },
         sent: {
             type: Boolean,
             required: false
@@ -101,6 +106,19 @@ export default {
             default: false
         }
     }
+    ,
+    methods:{
+        HandleId(id,userName, src){
+            // console.log(id)
+            const MessageView = {
+                "id":id,
+                "userName":userName,
+                "src" :src
+            }
+            this.$emit("id", MessageView)
+        }
+    }
+    
 
 }
 </script>
@@ -115,7 +133,9 @@ export default {
     padding: 1rem 0.4rem;
     cursor: pointer;
 }
-
+.user-message-text h3{
+    color: white !important;
+}
 .user-message {
     position: relative;
     display: flex;

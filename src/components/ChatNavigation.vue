@@ -10,15 +10,23 @@ export default {
 <template>
     <div class="chat-Navigation-container">
         <div class="chat-Navigation-container-heading">
+            <router-link to="/">
             <img src="../../chat.png" alt="">
+
+            </router-link>
         </div>
         <div class="chat-Navigation-container-middleItem">
-            <p class="active"><i class="ri-discuss-fill"></i></p>
-            <p><i class="ri-user-line"></i></p>
-            <p><i class="ri-phone-line"></i></p>
-            <p><i class="ri-live-line"></i></p>
-            <p><i class="ri-bookmark-2-line"></i></p>
-            <p><i class="ri-settings-2-line"></i></p>
+
+             <router-link to="/chat"><i class="ri-discuss-fill"></i> </router-link>
+            <!-- <router-link to="/chat"></router-link>  -->
+            <!-- <RouterLink to="chat" ></RouterLink> -->
+            
+            <router-link to="/contact"><i class="ri-user-line"></i></router-link>
+            <router-link to="/phone"><i class="ri-phone-line"></i></router-link>
+            <router-link to="/video"><i class="ri-live-line"></i></router-link>
+            <router-link to="/Save"><i class="ri-bookmark-2-line"></i></router-link>
+            <router-link to="/setting"><i class="ri-settings-2-line"></i></router-link>
+          
         </div>
         <div class="chat-Navigation-container-last">
             <p><i class="ri-add-line"></i></p>
@@ -30,7 +38,7 @@ export default {
 </template>
 
 
-<style>
+<style lang="scss">
 .chat-Navigation-container {
 
     background-color: #161b1c;
@@ -56,26 +64,33 @@ export default {
     flex-direction: column;
 }
 
-.chat-Navigation-container-middleItem p {
+.chat-Navigation-container-middleItem a {
+    display: block;
     border-radius: 50%;
-    height: 2.5rem;
+    height: 2.3rem;
     width: 2.5rem;
+    color: gray;
     padding: 0.2rem 0rem;
     display: flex;
+    
+    font-size: 1.3rem;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: all 10ms ease-in-out;
-}
 
-.chat-Navigation-container-middleItem p:hover {
-    background-color: gray;
+     &:hover{
+background-color: gray;
     color: white;
+    }
 }
 
-.active {
+
+
+.router-link-active{
     background-color: #47a6c3 !important;
-    color: white;
+    color: white !important;
 }
 
 .chat-Navigation-container-middleItem p i {
